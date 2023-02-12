@@ -13,7 +13,7 @@ __this should be an important message__
 + third
 + fourth
 
-[Google](https://www.google.com) \n
+[Google](https://www.google.com) <br>
 [Google](https://www.google.com "Google homepage")
 
 |   x  | col1 | col2 | col3 |
