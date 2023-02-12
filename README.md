@@ -1,37 +1,41 @@
-# digital-electronics-1
-## header 2
-### header 3
-_this is text written in italics_ <br>
-__this should be an important message__
-1. first
-2. second
-3. third
-4. fourth
+# Lab 1: INSERT_YOUR_FIRSTNAME INSERT_YOUR_LASTNAME
 
-+ first
-+ second
-+ third
-+ fourth
+### De Morgan's laws
 
-[Google](https://www.google.com) <br>
-[Google](https://www.google.com "Google homepage")
+1. Equations of all three versions of logic function f(c,b,a):
 
-|   x  | col1 | col2 | col3 |
-|-----:|------|------|------|
-| row1 | 1 1  | 1 2  | 1 3  |
-| row2 | 2 1  | 2 2  | 2 3  |
+   ![Logic function](images/equations.png)
+
+2. Listing of VHDL architecture from design file (`design.vhd`) for all three functions. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
 ```vhdl
+architecture dataflow of gates is
+begin
+    f_orig_o <= (not(b_i) and a_i) or (c_i and not(b_i or not(a_i)));
+    f_nand_o <= b_i nand a_i; -- MODIFY THIS FUNCTION
+    f_nor_o  <= b_i nor a_i;  -- MODIFY THIS FUNCTION
+end architecture dataflow;
+```
 
-architecture testbench of tb_gates is
+3. Complete table with logic functions' values:
 
-    -- Testbench local signals
-    signal s_c      : std_logic;
-    signal s_b      : std_logic;
-    signal s_a      : std_logic;
-    signal s_f_orig : std_logic;
-    signal s_f_nand : std_logic;
-    signal s_f_nor  : std_logic;
-    
-    https://www.edaplayground.com/x/Dfi9
-    ```
+   | **c** | **b** |**a** | **f_ORIG** | **f_(N)AND** | **f_(N)OR** |
+   | :-: | :-: | :-: | :-: | :-: | :-: |
+   | 0 | 0 | 0 |  |  |  |
+   | 0 | 0 | 1 |  |  |  |
+   | 0 | 1 | 0 |  |  |  |
+   | 0 | 1 | 1 |  |  |  |
+   | 1 | 0 | 0 |  |  |  |
+   | 1 | 0 | 1 |  |  |  |
+   | 1 | 1 | 0 |  |  |  |
+   | 1 | 1 | 1 |  |  |  |
+
+### Distributive laws
+
+1. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
+
+   ![your figure]()
+
+2. Link to your public EDA Playground example:
+
+   [https://www.edaplayground.com/...](https://www.edaplayground.com/...)
