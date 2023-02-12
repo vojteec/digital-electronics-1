@@ -21,7 +21,7 @@ __this should be an important message__
 | row1 | 1 1  | 1 2  | 1 3  |
 | row2 | 2 1  | 2 2  | 2 3  |
 
-***vhdl
+```vhdl
 
 architecture testbench of tb_gates is
 
@@ -33,4 +33,4 @@ architecture testbench of tb_gates is
     signal s_f_nand : std_logic;
     signal s_f_nor  : std_logic;
     
-    ***
+    ```
