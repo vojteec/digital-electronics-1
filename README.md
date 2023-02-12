@@ -1,7 +1,7 @@
 # digital-electronics-1
 ## header 2
 ### header 3
-_this is text written in italics_
+_this is text written in italics_ <br>
 __this should be an important message__
 1. first
 2. second
@@ -13,7 +13,7 @@ __this should be an important message__
 + third
 + fourth
 
-[Google](https://www.google.com)
+[Google](https://www.google.com) \n
 [Google](https://www.google.com "Google homepage")
 
 |   x  | col1 | col2 | col3 |
