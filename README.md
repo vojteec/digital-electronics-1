@@ -21,3 +21,16 @@ __this should be an important message__
 | row1 | 1 1  | 1 2  | 1 3  |
 | row2 | 2 1  | 2 2  | 2 3  |
 
+***vhdl
+
+architecture testbench of tb_gates is
+
+    -- Testbench local signals
+    signal s_c      : std_logic;
+    signal s_b      : std_logic;
+    signal s_a      : std_logic;
+    signal s_f_orig : std_logic;
+    signal s_f_nand : std_logic;
+    signal s_f_nor  : std_logic;
+    
+    ***
