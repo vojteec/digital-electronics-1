@@ -33,4 +33,5 @@ architecture testbench of tb_gates is
     signal s_f_nand : std_logic;
     signal s_f_nor  : std_logic;
     
+    https://www.edaplayground.com/x/Dfi9
     ```
