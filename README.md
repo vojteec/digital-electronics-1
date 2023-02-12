@@ -17,6 +17,7 @@ __this should be an important message__
 [Google](https://www.google.com "Google homepage")
 
 |   x  | col1 | col2 | col3 |
+|-----:|------|------|------|
 | row1 | 1 1  | 1 2  | 1 3  |
 | row2 | 2 1  | 2 2  | 2 3  |
 
