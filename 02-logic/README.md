@@ -1,4 +1,4 @@
-# Lab 2: Vojtěch Kuchař
+# Lab 2: Vojtěch Kuchař 
 
 ### 2-bit comparator
 
