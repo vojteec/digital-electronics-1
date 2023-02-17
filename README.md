@@ -13,3 +13,9 @@ There can be more than __one__ type of _list_.<br>
 3. And even also the third part
 
 [This is a link to a well-known internet browser – Google.](https://google.com "Google.com")
+
+|This|Is|A|Table|
+|----|--|-|-----|
+|This|Is|A|Table|
+|Of  |A |Few|Rows|
+|And |Collumns|.|.|
