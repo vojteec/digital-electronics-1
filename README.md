@@ -16,6 +16,7 @@ There can be more than __one__ type of _list_.<br>
 
 |This|Is|A|Table|
 |----|--|-|-----|
+|----|--|-|-----|
 |This|Is|A|Table|
 |Of  |A |Few|Rows|
 |And |Collumns|.|.|
