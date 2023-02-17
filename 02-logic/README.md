@@ -1,4 +1,4 @@
-# Lab 2: INSERT_YOUR_FIRSTNAME INSERT_YOUR_LASTNAMEE
+# Lab 2: Vojtěch Kuchař
 
 ### 2-bit comparator
 
