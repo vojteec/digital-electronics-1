@@ -21,5 +21,11 @@ There can be more than __one__ type of _list_.<br>
 |And |Collumns|.|.|
 
 ```vhdl
-
+architecture dataflow of gates is
+begin
+    f_orig_o <= (not(b_i) and a_i) or (c_i and not(b_i or not(a_i)));
+    f_nand_o <= (not(b_i) and a_i) or (c_i and ((not b_i) and a_i));
+    f_nor_o  <= not(b_i or not(a_i)) or (c_i and not(b_i or not(a_i)));
+end architecture dataflow;
 ```
+This is the end of this README file.
