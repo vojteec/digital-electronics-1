@@ -10,4 +10,6 @@ __This is a strong message.__<br>
 There can be more than __one__ type of _list_.<br>
 1. Ordered list
 2. His second part
-3. And also even the third part
+3. And even also the third part
+
+[This is a link to a well-known internet browser – Google.](https://google.com "Google.com")
