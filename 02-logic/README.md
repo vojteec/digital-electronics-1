@@ -48,5 +48,5 @@ This test case is going to pass well, although the EDA playground test case is m
 
 2. Link to your public EDA Playground example:
 
-   [2-bit example](https://edaplayground.com/x/tBfJ)
+   [2-bit example](https://edaplayground.com/x/tBfJ) <br>
    [4-bit example](https://edaplayground.com/x/8Vc6)
