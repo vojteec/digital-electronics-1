@@ -1,12 +1,24 @@
-# Lab 1: Vojtěch Kuchař
+# Digital electronics 1
+## Vojtěch Kuchař
+### Summer semester of 2023
+_This is written in cursive._<br>
+__This is a strong message.__<br>
+- This is an unondered list
+- And his items
+- And even the third one<br>
 
-### De Morgan's laws
+There can be more than __one__ type of _list_.<br>
+1. Ordered list
+2. His second part
+3. And even also the third part
 
-1. Equations of all three versions of logic function f(c,b,a):
+[This is a link to a well-known internet browser – Google.](https://google.com "Google.com")
 
-   ![Logic function](formulas.png)
-
-2. Listing of VHDL architecture from design file (`design.vhd`) for all three functions. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
+|This|Is|A|Table|
+|----|--|-|-----|
+|This|Is|A|Table|
+|Of  |A |Few|Rows|
+|And |Collumns|.|.|
 
 ```vhdl
 architecture dataflow of gates is
@@ -16,26 +28,4 @@ begin
     f_nor_o  <= not(b_i or not(a_i)) or (c_i and not(b_i or not(a_i)));
 end architecture dataflow;
 ```
-
-3. Complete table with logic functions' values:
-
-   | **c** | **b** |**a** | **f_ORIG** | **f_(N)AND** | **f_(N)OR** |
-   | :-: | :-: | :-: | :-: | :-: | :-: |
-   | 0 | 0 | 0 | 0 | 0 | 0 |
-   | 0 | 0 | 1 | 1 | 1 | 1 |
-   | 0 | 1 | 0 | 0 | 0 | 0 |
-   | 0 | 1 | 1 | 0 | 0 | 0 |
-   | 1 | 0 | 0 | 0 | 0 | 0 |
-   | 1 | 0 | 1 | 1 | 1 | 1 |
-   | 1 | 1 | 0 | 0 | 0 | 0 |
-   | 1 | 1 | 1 | 0 | 0 | 0 |
-
-### Distributive laws
-
-1. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
-
-   ![Simulated time waveforms](waveforms.png "Simulated time waveforms")
-
-2. Link to your public EDA Playground example:
-
-   [Link to my example on public EDA Playground](https://www.edaplayground.com/x/Dfi9)
+This is the end of this README file.
