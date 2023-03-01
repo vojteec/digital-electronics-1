@@ -7,7 +7,10 @@
 ```vhdl
 architecture Behavioral of mux_3bit_4to1 is
 begin
-    -- WRITE YOUR CODE HERE
+    y_o <= a_i when (sel = "00") else
+       b_i when (sel = "01") else
+       c_i when (sel = "10") else
+       d_i;
 end architecture Behavioral;
 ```
 
