@@ -1,4 +1,38 @@
-Vivado Simulator 2020.2
+Vivado Simulator v2020.3.0
 Time resolution is 1 ps
 Note: Stimulus process started
-Time: 0 ps  Iteration: 0  Process: /tb_hex_7seg/p_stimulus  File: C:/Users/240173/digital-electronics-1/04-segment/hex_7_seg/hex_7_seg.srcs/sim_1/new/tb_hex_7seg.vhd
+Time: 0 ps  Iteration: 0  Process: /tb_top/p_stimulus  File: C:/Users/vojte/digital-electronics-1/04-segment/hex_7_seg/hex_7_seg.srcs/sim_1/new/tb_top.vhd
+Error: Input combination 0 FAILED
+Time: 100 ns  Iteration: 0  Process: /tb_top/p_stimulus  File: C:/Users/vojte/digital-electronics-1/04-segment/hex_7_seg/hex_7_seg.srcs/sim_1/new/tb_top.vhd
+Error: Input combination 1 FAILED
+Time: 200 ns  Iteration: 0  Process: /tb_top/p_stimulus  File: C:/Users/vojte/digital-electronics-1/04-segment/hex_7_seg/hex_7_seg.srcs/sim_1/new/tb_top.vhd
+Error: Input combination 2 FAILED
+Time: 300 ns  Iteration: 0  Process: /tb_top/p_stimulus  File: C:/Users/vojte/digital-electronics-1/04-segment/hex_7_seg/hex_7_seg.srcs/sim_1/new/tb_top.vhd
+Error: Input combination 3 FAILED
+Time: 400 ns  Iteration: 0  Process: /tb_top/p_stimulus  File: C:/Users/vojte/digital-electronics-1/04-segment/hex_7_seg/hex_7_seg.srcs/sim_1/new/tb_top.vhd
+Error: Input combination 4 FAILED
+Time: 500 ns  Iteration: 0  Process: /tb_top/p_stimulus  File: C:/Users/vojte/digital-electronics-1/04-segment/hex_7_seg/hex_7_seg.srcs/sim_1/new/tb_top.vhd
+Error: Input combination 5 FAILED
+Time: 600 ns  Iteration: 0  Process: /tb_top/p_stimulus  File: C:/Users/vojte/digital-electronics-1/04-segment/hex_7_seg/hex_7_seg.srcs/sim_1/new/tb_top.vhd
+Error: Input combination 6 FAILED
+Time: 700 ns  Iteration: 0  Process: /tb_top/p_stimulus  File: C:/Users/vojte/digital-electronics-1/04-segment/hex_7_seg/hex_7_seg.srcs/sim_1/new/tb_top.vhd
+Error: Input combination 7 FAILED
+Time: 800 ns  Iteration: 0  Process: /tb_top/p_stimulus  File: C:/Users/vojte/digital-electronics-1/04-segment/hex_7_seg/hex_7_seg.srcs/sim_1/new/tb_top.vhd
+Error: Input combination 8 FAILED
+Time: 900 ns  Iteration: 0  Process: /tb_top/p_stimulus  File: C:/Users/vojte/digital-electronics-1/04-segment/hex_7_seg/hex_7_seg.srcs/sim_1/new/tb_top.vhd
+Error: Input combination 9 FAILED
+Time: 1 us  Iteration: 0  Process: /tb_top/p_stimulus  File: C:/Users/vojte/digital-electronics-1/04-segment/hex_7_seg/hex_7_seg.srcs/sim_1/new/tb_top.vhd
+Error: Input combination a FAILED
+Time: 1100 ns  Iteration: 0  Process: /tb_top/p_stimulus  File: C:/Users/vojte/digital-electronics-1/04-segment/hex_7_seg/hex_7_seg.srcs/sim_1/new/tb_top.vhd
+Error: Input combination b FAILED
+Time: 1200 ns  Iteration: 0  Process: /tb_top/p_stimulus  File: C:/Users/vojte/digital-electronics-1/04-segment/hex_7_seg/hex_7_seg.srcs/sim_1/new/tb_top.vhd
+Error: Input combination c FAILED
+Time: 1300 ns  Iteration: 0  Process: /tb_top/p_stimulus  File: C:/Users/vojte/digital-electronics-1/04-segment/hex_7_seg/hex_7_seg.srcs/sim_1/new/tb_top.vhd
+Error: Input combination d FAILED
+Time: 1400 ns  Iteration: 0  Process: /tb_top/p_stimulus  File: C:/Users/vojte/digital-electronics-1/04-segment/hex_7_seg/hex_7_seg.srcs/sim_1/new/tb_top.vhd
+Error: Input combination e FAILED
+Time: 1500 ns  Iteration: 0  Process: /tb_top/p_stimulus  File: C:/Users/vojte/digital-electronics-1/04-segment/hex_7_seg/hex_7_seg.srcs/sim_1/new/tb_top.vhd
+Error: Input combination f FAILED
+Time: 1600 ns  Iteration: 0  Process: /tb_top/p_stimulus  File: C:/Users/vojte/digital-electronics-1/04-segment/hex_7_seg/hex_7_seg.srcs/sim_1/new/tb_top.vhd
+Note: Stimulus process finished
+Time: 1600 ns  Iteration: 0  Process: /tb_top/p_stimulus  File: C:/Users/vojte/digital-electronics-1/04-segment/hex_7_seg/hex_7_seg.srcs/sim_1/new/tb_top.vhd
