@@ -58,8 +58,10 @@ begin
         if rising_edge(clk) then
             if rst = '1' then
                 sig_q <= '0';
-            elsif j = '0' then
-                sig_q <= sig_q;
+            elsif j = '0' and k = '1' then
+                sig_q <= '0';
+            elsif j = '1' and k = '0' then
+                sig_q <= '1';
             else
                 sig_q <= not (sig_q);
         -- WRITE YOUR CODE HERE
