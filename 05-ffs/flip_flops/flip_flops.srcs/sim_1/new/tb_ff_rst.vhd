@@ -23,6 +23,8 @@ architecture testbench of tb_ff_rst is
     signal sig_dq_bar     : std_logic;
     signal sig_tq         : std_logic;
     signal sig_tq_bar     : std_logic;
+    signal sig_jkq        : std_logic;
+    signal sig_jkq_bar    : std_logic;
 
 begin
     -- Connecting testbench signals with d_ff_rst entity
@@ -47,6 +49,17 @@ begin
             q_bar => sig_tq_bar
         );
 
+    -- Connecting testbench signals with t_ff_rst entity
+    -- (Unit Under Test)
+    uut_jk_ff_rst : entity work.jk_ff_rst
+        port map (
+            clk   => sig_clk_100MHz,
+            rst   => sig_rst,
+            j     => sig_data,
+            k     => sig_data,
+            q     => sig_jkq,
+            q_bar => sig_jkq_bar
+        );
     --------------------------------------------------------
     -- Clock generation process
     --------------------------------------------------------

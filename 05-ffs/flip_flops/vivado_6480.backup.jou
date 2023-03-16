@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2020.3 (64-bit)
+# SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
+# IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
+# Start of session at: Tue Mar 14 20:36:12 2023
+# Process ID: 6480
+# Current directory: C:/Users/vojte/digital-electronics-1/05-ffs/flip_flops
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18664 C:\Users\vojte\digital-electronics-1\05-ffs\flip_flops\flip_flops.xpr
+# Log file: C:/Users/vojte/digital-electronics-1/05-ffs/flip_flops/vivado.log
+# Journal file: C:/Users/vojte/digital-electronics-1/05-ffs/flip_flops\vivado.jou
+#-----------------------------------------------------------sstart_gui
+open_project -part xcvc1802-viva1596-1LHP-i-L C:/Users/vojte/digital-electronics-1/05-ffs/flip_flops/flip_flops.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_ff_rst.tcl
+close_sim
+launch_simulation
+source tb_ff_rst.tcl
+close_sim

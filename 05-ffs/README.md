@@ -13,7 +13,24 @@
 ```vhdl
 architecture Behavioral of jk_ff_rst is
 
-    -- WRITE YOUR CODE HERE
+    -- It must use this local signal instead of output ports
+    -- because "out" ports cannot be read within the architecture
+    signal sig_q : std_logic;
+begin
+    p_jk_ff_rst : process (clk) is
+    begin
+        if rising_edge(clk) then
+            if rst = '1' then
+                sig_q <= '0';
+            elsif j = '0' and k = '1' then
+                sig_q <= '0';
+            elsif j = '1' and k = '0' then
+                sig_q <= '1';
+            else
+                sig_q <= not (sig_q);
+            end if;
+        end if;
+    end process p_jk_ff_rst;
 
     -- Output ports are permanently connected to local signal
     q     <= sig_q;
@@ -25,4 +42,4 @@ end architecture Behavioral;
 
 1. Image of `top` level schematic of the 4-bit shift register. Use four D-type flip-flops and connect them properly. The image can be drawn on a computer or by hand. Always name all inputs, outputs, components and internal signals!
 
-   ![your figure]()
+   ![your figure](img/schematic.png)
