@@ -1,5 +1,6 @@
-Running: xsim.dir/tb_ff_rst_behav/xsimk.exe -simmode gui -wdb tb_ff_rst_behav.wdb -simrunnum 0 -socket 60893
+Running: xsim.dir/tb_ff_rst_behav/xsimk.exe -simmode gui -wdb tb_ff_rst_behav.wdb -simrunnum 0 -socket 53133
 Design successfully loaded
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 Design Loading Memory Usage: 6580 KB (Peak: 6580 KB)
 Design Loading CPU Usage: 15 ms
@@ -13,3 +14,10 @@ Simulation completed
 Simulation Memory Usage: 7092 KB (Peak: 7092 KB)
 Simulation CPU Usage: 108 ms
 >>>>>>> ad72216388a668d4e06a2be1ff774cf66708aff9
+=======
+Design Loading Memory Usage: 6468 KB (Peak: 6468 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 7100 KB (Peak: 7100 KB)
+Simulation CPU Usage: 249 ms
+>>>>>>> Stashed changes

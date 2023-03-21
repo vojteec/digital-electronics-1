@@ -59,34 +59,38 @@ begin
   -- Four instances (copies) of D-type FF entity
   d_ff_0 : entity work.d_ff_rst
       port map (
-          clk => CLK100MHZ,
-          rst => BTNC,
-          d   => SW,
-          q   => sig_ff0
+          clk   => CLK100MHZ,
+          rst   => BTNC,
+          d     => SW,
+          q     => sig_ff0,
+          q_bar => LED(0)
       );
 
   d_ff_1 : entity work.d_ff_rst
       port map (
-          clk => CLK100MHZ,
-          rst => BTNC,
-          d   => sig_ff0,
-          q   => sig_ff1
+          clk   => CLK100MHZ,
+          rst   => BTNC,
+          d     => sig_ff0,
+          q     => sig_ff1,
+          q_bar => LED(1)
       );
   
   d_ff_2 : entity work.d_ff_rst
       port map (
-          clk => CLK100MHZ,
-          rst => BTNC,
-          d   => sig_ff1,
-          q   => sig_ff2
+          clk   => CLK100MHZ,
+          rst   => BTNC,
+          d     => sig_ff1,
+          q     => sig_ff2,
+          q_bar => LED(2)
       );
 
   d_ff_3 : entity work.d_ff_rst
       port map (
-          clk => CLK100MHZ,
-          rst => BTNC,
-          d   => sig_ff2,
-          q   => sig_ff3
+          clk   => CLK100MHZ,
+          rst   => BTNC,
+          d     => sig_ff2,
+          q     => sig_ff3,
+          q_bar => LED(3)
       );
 
 end architecture behavioral;

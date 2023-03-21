@@ -2,18 +2,36 @@
 # Vivado v2020.3 (64-bit)
 # SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
 # IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
-# Start of session at: Tue Mar 14 20:36:12 2023
+# Start of session at: Wed Mar 15 09:56:58 2023
 # Process ID: 6480
 # Current directory: C:/Users/vojte/digital-electronics-1/05-ffs/flip_flops
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18664 C:\Users\vojte\digital-electronics-1\05-ffs\flip_flops\flip_flops.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21028 C:\Users\vojte\digital-electronics-1\05-ffs\flip_flops\flip_flops.xpr
 # Log file: C:/Users/vojte/digital-electronics-1/05-ffs/flip_flops/vivado.log
 # Journal file: C:/Users/vojte/digital-electronics-1/05-ffs/flip_flops\vivado.jou
-#-----------------------------------------------------------sstart_gui
-open_project -part xcvc1802-viva1596-1LHP-i-L C:/Users/vojte/digital-electronics-1/05-ffs/flip_flops/flip_flops.xpr
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/vojte/digital-electronics-1/05-ffs/flip_flops/flip_flops.xpr
 update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/vojte/digital-electronics-1/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb__top.vhd w ]
+add_files -fileset sim_1 C:/Users/vojte/digital-electronics-1/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb__top.vhd
+update_compile_order -fileset sim_1
 launch_simulation
 source tb_ff_rst.tcl
 close_sim
 launch_simulation
 source tb_ff_rst.tcl
+close_sim
+launch_simulation
+source tb_ff_rst.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
 close_sim

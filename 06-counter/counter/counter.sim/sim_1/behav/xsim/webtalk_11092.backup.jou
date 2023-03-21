@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.3 (64-bit)
+# SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
+# IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
+# Start of session at: Tue Mar 21 23:07:54 2023
+# Process ID: 11092
+# Current directory: C:/Users/vojte/digital-electronics-1/06-counter/counter/counter.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/vojte/digital-electronics-1/06-counter/counter/counter.sim/sim_1/behav/xsim/xsim.dir/tb_cnt_up_down_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/vojte/digital-electronics-1/06-counter/counter/counter.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/vojte/digital-electronics-1/06-counter/counter/counter.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/vojte/digital-electronics-1/06-counter/counter/counter.sim/sim_1/behav/xsim/xsim.dir/tb_cnt_up_down_behav/webtalk/xsim_webtalk.tcl -notrace

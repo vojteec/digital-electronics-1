@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2020.3 (64-bit)
+# SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
+# IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
+# Start of session at: Tue Mar 21 23:08:20 2023
+# Process ID: 17296
+# Current directory: C:/Users/vojte/digital-electronics-1/06-counter/counter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13000 C:\Users\vojte\digital-electronics-1\06-counter\counter\counter.xpr
+# Log file: C:/Users/vojte/digital-electronics-1/06-counter/counter/vivado.log
+# Journal file: C:/Users/vojte/digital-electronics-1/06-counter/counter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/vojte/digital-electronics-1/06-counter/counter/counter.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source top.tcl
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/vojte/digital-electronics-1/06-counter/counter/counter.srcs/sim_1/new/tb_top.vhd w ]
+add_files -fileset sim_1 C:/Users/vojte/digital-electronics-1/06-counter/counter/counter.srcs/sim_1/new/tb_top.vhd
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property source_mgmt_mode DisplayOnly [current_project]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_sim

@@ -33,7 +33,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity top is
     Port ( CLK100MHZ : in STD_LOGIC;
-           SW : in STD_LOGIC;
+           SW1 : in STD_LOGIC;
+           SW2 : in STD_LOGIC;
            CA : out STD_LOGIC;
            CB : out STD_LOGIC;
            CC : out STD_LOGIC;
@@ -42,6 +43,7 @@ entity top is
            CF : out STD_LOGIC;
            CG : out STD_LOGIC;
            AN : out STD_LOGIC_VECTOR (7 downto 0);
+           LED: out STD_LOGIC_VECTOR (11 downto 0);
            BTNC : in STD_LOGIC);
 end top;
 
@@ -54,6 +56,7 @@ architecture behavioral of top is
   -- 4-bit counter @ 250 ms
   signal sig_en_250ms : std_logic;                    --! Clock enable signal for Counter0
   signal sig_cnt_4bit : std_logic_vector(3 downto 0); --! Counter0
+  signal sig_en_10ms  : std_logic;
 
 begin
 
@@ -79,7 +82,7 @@ begin
       )
       port map(
           cnt          => sig_cnt_4bit,
-          cnt_up       => SW,
+          cnt_up       => SW1,
           clk          => CLK100MHZ,
           rst          => BTNC,
           en           => sig_en_250ms
@@ -100,6 +103,35 @@ begin
           seg(1) => CF,
           seg(0) => CG
       );
+      
+  --------------------------------------------------------
+  -- Instance (copy) of clock_enable entity
+  --------------------------------------------------------
+  clk_en1 : entity work.clock_enable
+      generic map(
+          g_MAX => 25000000
+      )
+      port map(
+          clk => CLK100MHZ,
+          rst => BTNC,
+          ce  => sig_en_10ms
+      );
+      
+  --------------------------------------------------------
+  -- Instance (copy) of cnt_up_down entity
+  --------------------------------------------------------
+  bin_cnt1 : entity work.cnt_up_down
+     generic map(
+          g_CNT_WIDTH => 12
+      )
+      port map(
+          cnt          => LED,
+          cnt_up       => SW2,
+          clk          => CLK100MHZ,
+          rst          => BTNC,
+          en           => sig_en_10ms
+      );
+
 
   --------------------------------------------------------
   -- Other settings
