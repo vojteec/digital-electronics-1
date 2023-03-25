@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
-# Vivado v2020.2 (64-bit)
-# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
-# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Mar 23 14:47:01 2023
-# Process ID: 6164
-# Current directory: C:/Users/240173/digital-electronics-1/07-display_driver/display_driver/display_driver.runs/synth_1
-# Command line: vivado.exe -log driver_7seg_8digits.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source driver_7seg_8digits.tcl
-# Log file: C:/Users/240173/digital-electronics-1/07-display_driver/display_driver/display_driver.runs/synth_1/driver_7seg_8digits.vds
-# Journal file: C:/Users/240173/digital-electronics-1/07-display_driver/display_driver/display_driver.runs/synth_1\vivado.jou
+# Vivado v2020.3 (64-bit)
+# SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
+# IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
+# Start of session at: Sat Mar 25 15:23:32 2023
+# Process ID: 17504
+# Current directory: C:/Users/vojte/digital-electronics-1/07-display_driver/display_driver/display_driver.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/vojte/digital-electronics-1/07-display_driver/display_driver/display_driver.runs/synth_1/top.vds
+# Journal file: C:/Users/vojte/digital-electronics-1/07-display_driver/display_driver/display_driver.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source driver_7seg_8digits.tcl -notrace
+source top.tcl -notrace

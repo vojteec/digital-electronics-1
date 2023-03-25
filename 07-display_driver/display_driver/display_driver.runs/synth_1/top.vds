@@ -1,14 +1,14 @@
-
-*** Running vivado
-    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
-
-
-
-****** Vivado v2020.3 (64-bit)
-  **** SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
-  **** IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
-    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
-
+#-----------------------------------------------------------
+# Vivado v2020.3 (64-bit)
+# SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
+# IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
+# Start of session at: Sat Mar 25 15:23:32 2023
+# Process ID: 17504
+# Current directory: C:/Users/vojte/digital-electronics-1/07-display_driver/display_driver/display_driver.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/vojte/digital-electronics-1/07-display_driver/display_driver/display_driver.runs/synth_1/top.vds
+# Journal file: C:/Users/vojte/digital-electronics-1/07-display_driver/display_driver/display_driver.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
 source top.tcl -notrace
 Command: synth_design -top top -part xcvc1802-viva1596-1LHP-i-L
 Starting synth_design

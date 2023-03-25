@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/240173/digital-electronics-1/07-display_driver/display_driver/display_driver.runs/impl_1/driver_7seg_8digits.tcl"
+  variable script "C:/Users/vojte/digital-electronics-1/07-display_driver/display_driver/display_driver.runs/impl_1/top.tcl"
   variable category "vivado_impl"
 }
 
@@ -124,29 +124,32 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 1
-  set_param synth.incrementalSynthesisCache C:/Users/240173/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-3728-PC-630/incrSyn
-  set_param xicom.use_bs_reader 1
+  set_param chipscope.maxJobs 2
+  set_param power.enableUnconnectedCarry8PinPower 1
+  set_param power.disableGlitchAnalysis 1
+  set_param power.enableCarry8RouteBelPower 1
+  set_param power.xpeLogicHierarchyThreshold 50
+  set_param power.enableLutRouteBelPower 1
+  set_param synth.incrementalSynthesisCache C:/Users/vojte/digital-electronics-1/07-display_driver/display_driver/.Xil/Vivado-16044-LAPTOP-8TTG9ACM/incrSyn
 OPTRACE "create in-memory project" START { }
-  create_project -in_memory -part xc7a50ticsg324-1L
-  set_property board_part digilentinc.com:nexys-a7-50t:part0:1.2 [current_project]
+  create_project -in_memory -part xcvc1802-viva1596-1LHP-i-L
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/240173/digital-electronics-1/07-display_driver/display_driver/display_driver.cache/wt [current_project]
-  set_property parent.project_path C:/Users/240173/digital-electronics-1/07-display_driver/display_driver/display_driver.xpr [current_project]
-  set_property ip_output_repo C:/Users/240173/digital-electronics-1/07-display_driver/display_driver/display_driver.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/vojte/digital-electronics-1/07-display_driver/display_driver/display_driver.cache/wt [current_project]
+  set_property parent.project_path C:/Users/vojte/digital-electronics-1/07-display_driver/display_driver/display_driver.xpr [current_project]
+  set_property ip_output_repo C:/Users/vojte/digital-electronics-1/07-display_driver/display_driver/display_driver.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/240173/digital-electronics-1/07-display_driver/display_driver/display_driver.runs/synth_1/driver_7seg_8digits.dcp
+  add_files -quiet C:/Users/vojte/digital-electronics-1/07-display_driver/display_driver/display_driver.runs/synth_1/top.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/240173/digital-electronics-1/07-display_driver/display_driver/display_driver.srcs/constrs_1/nexys-a7-50t.xdc
+  read_xdc C:/Users/vojte/digital-electronics-1/07-display_driver/display_driver/display_driver.srcs/constrs_1/nexys-a7-50t.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
-  link_design -top driver_7seg_8digits -part xc7a50ticsg324-1L
+  link_design -top top -part xcvc1802-viva1596-1LHP-i-L
 OPTRACE "link_design" END { }
 OPTRACE "gray box cells" START { }
 OPTRACE "gray box cells" END { }
@@ -178,10 +181,10 @@ OPTRACE "opt_design" END { }
 OPTRACE "read constraints: opt_design_post" START { }
 OPTRACE "read constraints: opt_design_post" END { }
 OPTRACE "Opt Design: write_checkpoint" START { CHECKPOINT }
-  write_checkpoint -force driver_7seg_8digits_opt.dcp
+  write_checkpoint -force top_opt.dcp
 OPTRACE "Opt Design: write_checkpoint" END { }
 OPTRACE "opt_design reports" START { REPORT }
-  create_report "impl_1_opt_report_drc_0" "report_drc -file driver_7seg_8digits_drc_opted.rpt -pb driver_7seg_8digits_drc_opted.pb -rpx driver_7seg_8digits_drc_opted.rpx"
+  create_report "impl_1_opt_report_drc_0" "report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx"
 OPTRACE "opt_design reports" END { }
   close_msg_db -file opt_design.pb
 } RESULT]
@@ -212,12 +215,12 @@ OPTRACE "place_design" END { }
 OPTRACE "read constraints: place_design_post" START { }
 OPTRACE "read constraints: place_design_post" END { }
 OPTRACE "Place Design: write_checkpoint" START { CHECKPOINT }
-  write_checkpoint -force driver_7seg_8digits_placed.dcp
+  write_checkpoint -force top_placed.dcp
 OPTRACE "Place Design: write_checkpoint" END { }
 OPTRACE "place_design reports" START { REPORT }
-  create_report "impl_1_place_report_io_0" "report_io -file driver_7seg_8digits_io_placed.rpt"
-  create_report "impl_1_place_report_utilization_0" "report_utilization -file driver_7seg_8digits_utilization_placed.rpt -pb driver_7seg_8digits_utilization_placed.pb"
-  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file driver_7seg_8digits_control_sets_placed.rpt"
+  create_report "impl_1_place_report_io_0" "report_io -file top_io_placed.rpt"
+  create_report "impl_1_place_report_utilization_0" "report_utilization -file top_utilization_placed.rpt -pb top_utilization_placed.pb"
+  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file top_control_sets_placed.rpt"
 OPTRACE "place_design reports" END { }
   close_msg_db -file place_design.pb
 } RESULT]
@@ -243,7 +246,7 @@ OPTRACE "phys_opt_design" END { }
 OPTRACE "read constraints: phys_opt_design_post" START { }
 OPTRACE "read constraints: phys_opt_design_post" END { }
 OPTRACE "Post-Place Phys Opt Design: write_checkpoint" START { CHECKPOINT }
-  write_checkpoint -force driver_7seg_8digits_physopt.dcp
+  write_checkpoint -force top_physopt.dcp
 OPTRACE "Post-Place Phys Opt Design: write_checkpoint" END { }
 OPTRACE "phys_opt_design report" START { REPORT }
 OPTRACE "phys_opt_design report" END { }
@@ -271,17 +274,17 @@ OPTRACE "route_design" END { }
 OPTRACE "read constraints: route_design_post" START { }
 OPTRACE "read constraints: route_design_post" END { }
 OPTRACE "Route Design: write_checkpoint" START { CHECKPOINT }
-  write_checkpoint -force driver_7seg_8digits_routed.dcp
+  write_checkpoint -force top_routed.dcp
 OPTRACE "Route Design: write_checkpoint" END { }
 OPTRACE "route_design reports" START { REPORT }
-  create_report "impl_1_route_report_drc_0" "report_drc -file driver_7seg_8digits_drc_routed.rpt -pb driver_7seg_8digits_drc_routed.pb -rpx driver_7seg_8digits_drc_routed.rpx"
-  create_report "impl_1_route_report_methodology_0" "report_methodology -file driver_7seg_8digits_methodology_drc_routed.rpt -pb driver_7seg_8digits_methodology_drc_routed.pb -rpx driver_7seg_8digits_methodology_drc_routed.rpx"
-  create_report "impl_1_route_report_power_0" "report_power -file driver_7seg_8digits_power_routed.rpt -pb driver_7seg_8digits_power_summary_routed.pb -rpx driver_7seg_8digits_power_routed.rpx"
-  create_report "impl_1_route_report_route_status_0" "report_route_status -file driver_7seg_8digits_route_status.rpt -pb driver_7seg_8digits_route_status.pb"
-  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file driver_7seg_8digits_timing_summary_routed.rpt -pb driver_7seg_8digits_timing_summary_routed.pb -rpx driver_7seg_8digits_timing_summary_routed.rpx -warn_on_violation "
-  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file driver_7seg_8digits_incremental_reuse_routed.rpt"
-  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file driver_7seg_8digits_clock_utilization_routed.rpt"
-  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file driver_7seg_8digits_bus_skew_routed.rpt -pb driver_7seg_8digits_bus_skew_routed.pb -rpx driver_7seg_8digits_bus_skew_routed.rpx"
+  create_report "impl_1_route_report_drc_0" "report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx"
+  create_report "impl_1_route_report_methodology_0" "report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx"
+  create_report "impl_1_route_report_power_0" "report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx"
+  create_report "impl_1_route_report_route_status_0" "report_route_status -file top_route_status.rpt -pb top_route_status.pb"
+  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation "
+  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file top_incremental_reuse_routed.rpt"
+  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file top_clock_utilization_routed.rpt"
+  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file top_bus_skew_routed.rpt -pb top_bus_skew_routed.pb -rpx top_bus_skew_routed.rpx"
 OPTRACE "route_design reports" END { }
 OPTRACE "route_design misc" START { }
   close_msg_db -file route_design.pb
@@ -289,7 +292,7 @@ OPTRACE "route_design write_checkpoint" START { CHECKPOINT }
 OPTRACE "route_design write_checkpoint" END { }
 } RESULT]
 if {$rc} {
-  write_checkpoint -force driver_7seg_8digits_routed_error.dcp
+  write_checkpoint -force top_routed_error.dcp
   step_failed route_design
   return -code error $RESULT
 } else {
@@ -299,34 +302,4 @@ if {$rc} {
 
 OPTRACE "route_design misc" END { }
 OPTRACE "Phase: Route Design" END { }
-OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
-OPTRACE "write_bitstream setup" START { }
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-OPTRACE "read constraints: write_bitstream" START { }
-OPTRACE "read constraints: write_bitstream" END { }
-  catch { write_mem_info -force -no_partial_mmi driver_7seg_8digits.mmi }
-OPTRACE "write_bitstream setup" END { }
-OPTRACE "write_bitstream" START { }
-  write_bitstream -force driver_7seg_8digits.bit 
-OPTRACE "write_bitstream" END { }
-OPTRACE "write_bitstream misc" START { }
-OPTRACE "read constraints: write_bitstream_post" START { }
-OPTRACE "read constraints: write_bitstream_post" END { }
-  catch {write_debug_probes -quiet -force driver_7seg_8digits}
-  catch {file copy -force driver_7seg_8digits.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
-  unset ACTIVE_STEP 
-}
-
-OPTRACE "write_bitstream misc" END { }
-OPTRACE "Phase: Write Bitstream" END { }
 OPTRACE "impl_1" END { }

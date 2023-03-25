@@ -1,16 +1,16 @@
 //
 // Vivado(TM)
 // rundef.js: a Vivado-generated Runs Script for WSH 5.1/5.6
-// Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 //
 
 var WshShell = new ActiveXObject( "WScript.Shell" );
 var ProcEnv = WshShell.Environment( "Process" );
 var PathVal = ProcEnv("PATH");
 if ( PathVal.length == 0 ) {
-  PathVal = "C:/appz/Xilinx/Vivado/2020.2/ids_lite/ISE/bin/nt64;C:/appz/Xilinx/Vivado/2020.2/ids_lite/ISE/lib/nt64;C:/appz/Xilinx/Vivado/2020.2/bin;";
+  PathVal = "D:/Xilinx/Vivado/2020.3/bin;";
 } else {
-  PathVal = "C:/appz/Xilinx/Vivado/2020.2/ids_lite/ISE/bin/nt64;C:/appz/Xilinx/Vivado/2020.2/ids_lite/ISE/lib/nt64;C:/appz/Xilinx/Vivado/2020.2/bin;" + PathVal;
+  PathVal = "D:/Xilinx/Vivado/2020.3/bin;" + PathVal;
 }
 
 ProcEnv("PATH") = PathVal;
@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log driver_7seg_8digits.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source driver_7seg_8digits.tcl" );
+         "-log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl" );
 
 
 
