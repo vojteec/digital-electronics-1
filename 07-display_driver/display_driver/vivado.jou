@@ -2,24 +2,12 @@
 # Vivado v2020.3 (64-bit)
 # SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
 # IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
-# Start of session at: Sat Mar 25 13:37:10 2023
-# Process ID: 16044
+# Start of session at: Sat Mar 25 15:29:14 2023
+# Process ID: 3020
 # Current directory: C:/Users/vojte/digital-electronics-1/07-display_driver/display_driver
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12736 C:\Users\vojte\digital-electronics-1\07-display_driver\display_driver\display_driver.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3104 C:\Users\vojte\digital-electronics-1\07-display_driver\display_driver\display_driver.xpr
 # Log file: C:/Users/vojte/digital-electronics-1/07-display_driver/display_driver/vivado.log
 # Journal file: C:/Users/vojte/digital-electronics-1/07-display_driver/display_driver\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project -part xcvc1802-viva1596-1LHP-i-L C:/Users/vojte/digital-electronics-1/07-display_driver/display_driver/display_driver.xpr
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top top [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode DisplayOnly [current_project]
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-reset_run synth_1
-launch_runs impl_1 -jobs 4
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -jobs 4
-wait_on_run impl_1
+open_project C:/Users/vojte/digital-electronics-1/07-display_driver/display_driver/display_driver.xpr

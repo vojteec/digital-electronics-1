@@ -39,7 +39,7 @@ entity top is
            LED17_R : out STD_LOGIC;
            LED17_G : out STD_LOGIC;
            LED17_B : out STD_LOGIC;
-           BTNC : in STD_LOGIC;
+           BTNC : in STD_LOGIC);
            --BTNR : in STD_LOGIC;
            --BTNU : in STD_LOGIC);
 end top;
@@ -63,7 +63,7 @@ begin
       west(2)  => LED17_R,
       west(1)  => LED17_G,
       west(0)  => LED17_B,
-      rst      => BTNC,
+      rst      => BTNC
       --spdbtns  => BTNU,
       --spdbtnw  => BTNR
     );
