@@ -1,8 +1,8 @@
-webtalk_init -webtalk_dir C:/Users/240173/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim/xsim.dir/tb_tlc_behav/webtalk/
+webtalk_init -webtalk_dir C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim/xsim.dir/tb_tlc_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Thu Mar 30 14:41:20 2023" -context "software_version_and_target_device"
-webtalk_add_data -client project -key product_version -value "XSIM v2020.2 (64-bit)" -context "software_version_and_target_device"
-webtalk_add_data -client project -key build_version -value "3064766" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Tue Apr  4 20:20:00 2023" -context "software_version_and_target_device"
+webtalk_add_data -client project -key product_version -value "XSIM v2020.3 (64-bit)" -context "software_version_and_target_device"
+webtalk_add_data -client project -key build_version -value "3173277" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
 webtalk_add_data -client project -key registration_id -value "" -context "software_version_and_target_device"
 webtalk_add_data -client project -key tool_flow -value "xsim_vivado" -context "software_version_and_target_device"
@@ -12,13 +12,13 @@ webtalk_add_data -client project -key target_family -value "not_applicable" -con
 webtalk_add_data -client project -key target_device -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key target_package -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
-webtalk_add_data -client project -key random_id -value "2e6ac5d9-c65e-4a69-bbf9-5d7f6fc0c35f" -context "software_version_and_target_device"
+webtalk_add_data -client project -key random_id -value "097b58ef-0d9e-41df-8b3b-9d128ef557da" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "72956dd3de514373b7221da7d3e85870" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "9" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "14" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Windows Server 2016 or Windows 10" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
-webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i3-9100 CPU @ 3.60GHz" -context "user_environment"
-webtalk_add_data -client project -key cpu_speed -value "3600 MHz" -context "user_environment"
+webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz" -context "user_environment"
+webtalk_add_data -client project -key cpu_speed -value "2400 MHz" -context "user_environment"
 webtalk_add_data -client project -key total_processors -value "1" -context "user_environment"
 webtalk_add_data -client project -key system_ram -value "8.000 GB" -context "user_environment"
 webtalk_register_client -client xsim
@@ -26,7 +26,7 @@ webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
 webtalk_add_data -client xsim -key runtime -value "2 us" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "2" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.01_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "6772_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 2550775342 -regid "" -xml C:/Users/240173/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim/xsim.dir/tb_tlc_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/240173/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim/xsim.dir/tb_tlc_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/240173/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim/xsim.dir/tb_tlc_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.03_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "7184_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 287339742 -regid "" -xml C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim/xsim.dir/tb_tlc_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim/xsim.dir/tb_tlc_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim/xsim.dir/tb_tlc_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

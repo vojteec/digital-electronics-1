@@ -2,20 +2,14 @@
 # Vivado v2020.3 (64-bit)
 # SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
 # IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
-# Start of session at: Tue Apr  4 20:11:00 2023
-# Process ID: 15464
+# Start of session at: Tue Apr  4 19:59:00 2023
+# Process ID: 4776
 # Current directory: C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2168 C:\Users\vojte\digital-electronics-1\08-traffic_lights\traffic\traffic.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21500 C:\Users\vojte\digital-electronics-1\08-traffic_lights\traffic\traffic.xpr
 # Log file: C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/vivado.log
 # Journal file: C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.xpr
+open_project -part xcvc1802-viva1596-1LHP-i-L C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.xpr
 update_compile_order -fileset sources_1
-launch_simulation
-source tb_tlc.tcl
-current_wave_config {Untitled 1}
-add_wave {{/tb_tlc/uut_tlc/sig_state}} 
-relaunch_sim
-relaunch_sim
-close_sim
+update_compile_order -fileset sources_1

@@ -1,6 +1,6 @@
-Vivado Simulator 2020.2
+Vivado Simulator v2020.3.0
 Time resolution is 1 ps
 Note: Stimulus process started
-Time: 0 ps  Iteration: 0  Process: /tb_tlc/p_stimulus  File: C:/Users/240173/digital-electronics-1/08-traffic_lights/traffic/traffic.srcs/sim_1/new/tb_tlc.vhd
+Time: 0 ps  Iteration: 0  Process: /tb_tlc/p_stimulus  File: C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.srcs/sim_1/new/tb_tlc.vhd
 Note: Stimulus process finished
-Time: 0 ps  Iteration: 0  Process: /tb_tlc/p_stimulus  File: C:/Users/240173/digital-electronics-1/08-traffic_lights/traffic/traffic.srcs/sim_1/new/tb_tlc.vhd
+Time: 0 ps  Iteration: 0  Process: /tb_tlc/p_stimulus  File: C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.srcs/sim_1/new/tb_tlc.vhd

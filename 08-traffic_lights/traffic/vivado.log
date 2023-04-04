@@ -2,28 +2,186 @@
 # Vivado v2020.3 (64-bit)
 # SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
 # IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
-# Start of session at: Tue Apr  4 19:59:00 2023
-# Process ID: 4776
+# Start of session at: Tue Apr  4 20:11:00 2023
+# Process ID: 15464
 # Current directory: C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21500 C:\Users\vojte\digital-electronics-1\08-traffic_lights\traffic\traffic.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2168 C:\Users\vojte\digital-electronics-1\08-traffic_lights\traffic\traffic.xpr
 # Log file: C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/vivado.log
 # Journal file: C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project -part xcvc1802-viva1596-1LHP-i-L C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.xpr
-INFO: [Project 1-313] Project file moved from 'C:/Users/240173/digital-electronics-1/08-traffic_lights/traffic' since last save.
-INFO: [Project 1-563] Overriding project part, 'xc7a50ticsg324-1L', with new part: 'xcvc1802-viva1596-1LHP-i-L'.
-WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.gen/sources_1', nor could it be found using path 'C:/Users/240173/digital-electronics-1/08-traffic_lights/traffic/traffic.gen/sources_1'.
+open_project C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
-INFO: [Project 1-573] Overriding 'synth_1' run's part, 'xc7a50ticsg324-1L', with new part: 'xcvc1802-viva1596-1LHP-i-L'.
-INFO: [Project 1-573] Overriding 'impl_1' run's part, 'xc7a50ticsg324-1L', with new part: 'xcvc1802-viva1596-1LHP-i-L'.
-CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:nexys-a7-50t:part0:1.2. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.3/data/ip'.
-open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1292.008 ; gain = 0.000
 update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tlc' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_tlc_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj tb_tlc_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.srcs/sources_1/new/clock_enable.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'clock_enable'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.srcs/sources_1/new/tlc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tlc'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.srcs/sim_1/new/tb_tlc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_tlc'
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim'
+"xelab -wto 72956dd3de514373b7221da7d3e85870 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot tb_tlc_behav xil_defaultlib.tb_tlc xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2020.3.0
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.3/bin/unwrapped/win64.o/xelab.exe -wto 72956dd3de514373b7221da7d3e85870 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot tb_tlc_behav xil_defaultlib.tb_tlc xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.clock_enable [\clock_enable(g_max=25000000)\]
+Compiling architecture behavioral of entity xil_defaultlib.tlc [tlc_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_tlc
+Built simulation snapshot tb_tlc_behav
+
+****** Webtalk v2020.3 (64-bit)
+  **** SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
+  **** IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim/xsim.dir/tb_tlc_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim/xsim.dir/tb_tlc_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Apr  4 20:11:56 2023. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2020.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Apr  4 20:11:56 2023...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1102.871 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_tlc_behav -key {Behavioral:sim_1:Functional:tb_tlc} -tclbatch {tb_tlc.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator v2020.3.0
+Time resolution is 1 ps
+source tb_tlc.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_tlc/p_stimulus  File: C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.srcs/sim_1/new/tb_tlc.vhd
+Note: Stimulus process finished
+Time: 0 ps  Iteration: 0  Process: /tb_tlc/p_stimulus  File: C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.srcs/sim_1/new/tb_tlc.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_tlc_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 1102.871 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_tlc/uut_tlc/sig_state}} 
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1102.871 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tlc' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_tlc_vlog.prj"
+"xvhdl --incr --relax -prj tb_tlc_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim'
+"xelab -wto 72956dd3de514373b7221da7d3e85870 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot tb_tlc_behav xil_defaultlib.tb_tlc xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2020.3.0
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.3/bin/unwrapped/win64.o/xelab.exe -wto 72956dd3de514373b7221da7d3e85870 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot tb_tlc_behav xil_defaultlib.tb_tlc xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator v2020.3.0
+Time resolution is 1 ps
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_tlc/p_stimulus  File: C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.srcs/sim_1/new/tb_tlc.vhd
+Note: Stimulus process finished
+Time: 0 ps  Iteration: 0  Process: /tb_tlc/p_stimulus  File: C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.srcs/sim_1/new/tb_tlc.vhd
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1102.871 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_tlc' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_tlc_vlog.prj"
+"xvhdl --incr --relax -prj tb_tlc_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.srcs/sources_1/new/tlc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tlc'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.srcs/sim_1/new/tb_tlc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_tlc'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim'
+"xelab -wto 72956dd3de514373b7221da7d3e85870 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot tb_tlc_behav xil_defaultlib.tb_tlc xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2020.3.0
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.3/bin/unwrapped/win64.o/xelab.exe -wto 72956dd3de514373b7221da7d3e85870 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot tb_tlc_behav xil_defaultlib.tb_tlc xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.clock_enable [\clock_enable(g_max=1)\]
+Compiling architecture behavioral of entity xil_defaultlib.tlc [tlc_default]
+Compiling architecture testbench of entity xil_defaultlib.tb_tlc
+Built simulation snapshot tb_tlc_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator v2020.3.0
+Time resolution is 1 ps
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_tlc/p_stimulus  File: C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.srcs/sim_1/new/tb_tlc.vhd
+Note: Stimulus process finished
+Time: 0 ps  Iteration: 0  Process: /tb_tlc/p_stimulus  File: C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.srcs/sim_1/new/tb_tlc.vhd
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1102.871 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue Apr  4 20:04:20 2023...
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  4 20:20:02 2023...

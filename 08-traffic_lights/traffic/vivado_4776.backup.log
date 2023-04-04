@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2020.3 (64-bit)
+# SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
+# IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
+# Start of session at: Tue Apr  4 19:59:00 2023
+# Process ID: 4776
+# Current directory: C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21500 C:\Users\vojte\digital-electronics-1\08-traffic_lights\traffic\traffic.xpr
+# Log file: C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/vivado.log
+# Journal file: C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -part xcvc1802-viva1596-1LHP-i-L C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/240173/digital-electronics-1/08-traffic_lights/traffic' since last save.
+INFO: [Project 1-563] Overriding project part, 'xc7a50ticsg324-1L', with new part: 'xcvc1802-viva1596-1LHP-i-L'.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.gen/sources_1', nor could it be found using path 'C:/Users/240173/digital-electronics-1/08-traffic_lights/traffic/traffic.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-573] Overriding 'synth_1' run's part, 'xc7a50ticsg324-1L', with new part: 'xcvc1802-viva1596-1LHP-i-L'.
+INFO: [Project 1-573] Overriding 'impl_1' run's part, 'xc7a50ticsg324-1L', with new part: 'xcvc1802-viva1596-1LHP-i-L'.
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:nexys-a7-50t:part0:1.2. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1292.008 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  4 20:04:20 2023...

@@ -2,11 +2,13 @@
 # Webtalk v2020.3 (64-bit)
 # SW Build 3173277 on Wed Apr  7 05:07:49 MDT 2021
 # IP Build 3174024 on Wed Apr  7 23:42:35 MDT 2021
-# Start of session at: Tue Apr  4 20:12:13 2023
-# Process ID: 2196
+# Start of session at: Tue Apr  4 20:11:51 2023
+# Process ID: 5708
 # Current directory: C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim/xsim.dir/tb_tlc_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
 source C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim/xsim.dir/tb_tlc_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/vojte/digital-electronics-1/08-traffic_lights/traffic/traffic.sim/sim_1/behav/xsim/xsim.dir/tb_tlc_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Apr  4 20:11:56 2023. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2020.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Apr  4 20:11:56 2023...
